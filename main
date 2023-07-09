@@ -1,0 +1,19 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func printWordsSeparately(sentence string) {
+	words := strings.Split(sentence, " ")
+
+	for _, word := range words {
+		fmt.Println(word)
+	}
+}
+
+func main() {
+	sentence := "Это пример предложения, которое будет разделено на отдельные слова"
+	printWordsSeparately(sentence)
+}
